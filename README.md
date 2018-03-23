@@ -1,4 +1,4 @@
-# Trading Platform - NetPipe
+# NetPipe
 
 This module created in order to support communication between services in ```Micro Services architecture``` .
 In that case, almost service was located on separated machines. 
@@ -69,3 +69,4 @@ event.addListener('collector', 'newFeed', function(feed) {
 });
 
 ```
+

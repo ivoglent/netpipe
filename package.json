@@ -1,6 +1,6 @@
 {
-  "name": "netpipe",
-  "version": "1.0.3",
+  "name": "node-netpipe",
+  "version": "1.0.1",
   "description": "Network communication pipe",
   "main": "index.js",
   "scripts": {

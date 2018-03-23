@@ -5,7 +5,7 @@ In that case, almost service was located on separated machines.
 
 ## Installation
 ```
-$ npm i netpipe
+$ npm i --save netpipe
 ```
 
 Netpipe uses socket.io and socket.io-client to make a connection from event host and event listener. 

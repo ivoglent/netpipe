@@ -3,6 +3,11 @@
 This module created in order to support communication between services in ```Micro Services architecture``` .
 In that case, almost service was located on separated machines. 
 
+## Installation
+```
+$ npm i netpipe
+```
+
 Netpipe uses socket.io and socket.io-client to make a connection from event host and event listener. 
 ## Configurations
 

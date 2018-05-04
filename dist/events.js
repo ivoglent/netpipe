@@ -134,8 +134,22 @@ class NetworkEvent extends EventEmitter {
                     if (p) {
                         ip = p[1];
                         for (let name in serverList) {
-                            if ((new RegExp('^' + ip)).test(serverList[name])) {
-                                return next();
+                            let svIps = serverList[name];
+                            if (Array.isArray(svIps)) {
+                                let check = false;
+                                svIps.forEach(function (svIp) {
+                                    if ((new RegExp('^' + ip)).test(svIp)) {
+                                        check = true;
+                                    }
+                                });
+                                if (check) {
+                                    return next();
+                                }
+                            }
+                            else {
+                                if ((new RegExp('^' + ip)).test(svIps)) {
+                                    return next();
+                                }
                             }
                         }
                     }

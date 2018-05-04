@@ -1,10 +1,11 @@
 {
   "name": "netpipe",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Network communication pipe",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 30000 --compilers ts:ts-node/register ./tests/**/*.spec.ts"
+    "test": "mocha --timeout 30000 --compilers ts:ts-node/register ./tests/**/*.spec.ts",
+    "build" : "rm -rf ./dist/* && tsc"
   },
   "repository": {
     "type": "git",
